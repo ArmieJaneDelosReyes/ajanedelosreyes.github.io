@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Holtwood+One+SC&family=Kaushan+Script&family=Titan+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* RIBBON */
+.theHead {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #fd0363;
+  font-size: 35px;
+  font-family: "Kaushan Script", cursive;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+
+#navbar h3 {
+  color: #fd0363;
+  font-size: 35px;
+  font-family: "Kaushan Script", cursive;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 14px 16px;
+}
+
+#navbar ul li {
+  margin-left: 50px;
+}
+
+/* #navbar ul li:first-child {
+  margin-left: 0;
+} */
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main_info h2 {
+  font-family: "Holtwood One SC", serif;
+}
+
+/* BODY */
+#homes {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  margin-top: 50px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+div img {
+  height: auto;
+  width: 400px;
+}
+
+.main_info {
+  margin-top: 100px;
+}
+
+.main_info h2 {
+  color: #fd0363;
+  font-size: 45px;
+  text-align: right;
+  margin-bottom: 1px;
+}
+
+.main_info h4 {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: right;
+}
+
+.another_info h5 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 200px;
+  color: #ffffff;
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.icons8 ul li {
+  display: flex;
+  list-style: none;
+}
+
+.icons8 {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+}
+
+.icons8 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.icons8 ul li {
+  margin-right: 1px; /* Adjust spacing between icons */
+}
+
+.icons8 ul li img {
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* About me */
+#abouts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+  margin-left: 90px;
+}
+
+.grid-item {
+  border: none; }
+
+.me1 {
+  height: auto;
+  width: 500px;
+}
+
+.grid-info {
+  border: 2px solid pink;
+  padding: 50px;
+}
+.grid-info {
+  text-align: justify;
+}
+
+.grid-infos h2 {
+  color: #fd0363;
+  font-size: 60px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid-info div {
+  text-align: justify;
+}
+
+.grid-info .contacts {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.line {
+  text-align: right;
+}
+
+/* specialtize */
+#whatido{
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+#whatidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#whatido {
+  color: #fd0363;
+  font-size: 40px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.details {
+  border: 2px solid pink;
+  padding: 50px;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  flex: 1; /* Each detail takes equal space */
+  max-width: 400px; 
+  max-height: 400px;
+}
+
+div .ui{
+  height: 250px;
+  width: 250px;
+}
+div .fd{
+  height: auto;
+  width: 350px;
+}
+

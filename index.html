@@ -4,58 +4,63 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Portfolio</title>
+        
+        <!-- <title>Portfolio</title> -->
     </head>
 
     <body>
-        <div class="theHead" >
-            <nav id="navbar">
-                <h3  >Portfolio</h3>
-                <ul>
-                    <li><a href="#homes" style="color: #fd0363">Home</a></li>
-                    <li><a href="#abouts">About</a></li>
-                    <li><a href="#whatido">What I Do</a></li>
-                    <li><a href="#project">Project</a></li>
-                </ul>
-            </nav>
-            <br>
-            <div id="homes" class="grid-container" >
-                <div class="grid-item">
-                    <div class="main_info">
-                        <h2>ARMIE JANE D</h2>
-                        <h2>DELOS REYES</h2>
-                        <br>
-                        
-                        <h4>I'm Frontend Developer</h4>
-                        <h4>and Graphic Designer</h4>
+        <div id="this">
+            <div class="theHead">
+                <nav id="navbar">
+                    <h3 class="logo">Portfolio</h3>
+                    <ul>
+                        <li><a href="#homes">Home</a></li>
+                        <li><a href="#abouts">About</a></li>
+                        <li><a href="#whatido">What I Do</a></li>
+                        <li><a href="#project">Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Home -->
+                <br>
+                <div id="homes" class="grid-container" >
+                    <div class="grid-item">
+                        <div class="main_info">
+                            <h2>ARMIE JANE D.</h2>
+                            <h2>DELOS REYES</h2>
+                            <br>
+                            <h4>I'm Frontend Developer</h4>
+                            <h4>and Graphic Designer</h4>
+                        </div>
                     </div>
-                </div>
-                <div c>
-                    <div>
-                        <img class="me" src="/image/image1.png" alt="image" />
+                    <div >
+                        <div>
+                            <img class="me" src="image/image1.png" alt="image" />
+                        </div>
                     </div>
-                </div>
-                <div class="grid-item">
-                    <div class="another_info">
-                        <h5>
-                            This is where my journey unfolds. Dive in and
-                            explore the stories I've crafted, the challenges
-                            I've conquered, and the visions I've brought to
-                            life. Let's embark on this adventure together.
-                        </h5>
-                    </div>
-                    <div class="icons8">
-                        <ul>
-                            <li><img class="icon" src="icons/icons8-facebook.png" alt="facebook" /></li>
-                            <li><img class="icon" src="icons/icons8-email.png" alt="email" /></li>
-                            <li><img class="icon" src="icons/icons8-linkedin.png" alt="linkedin" /></li>
-                            <li><img class="icon" src="icons/icons8-github.png" alt="github" /></li>
-                        </ul>
+                    <div class="grid-item">
+                        <div class="another_info">
+                            <h5>
+                                This is where my journey unfolds. Dive in and
+                                explore the stories I've crafted, the challenges
+                                I've conquered, and the visions I've brought to
+                                life. Let's embark on this adventure together.
+                            </h5>
+                        </div>
+                        <div class="icons8">
+                            <ul>
+                                <li><img class="icon" src="icons/icons8-facebook.png" alt="facebook" /></li>
+                                <li><img class="icon" src="icons/icons8-email.png" alt="email" /></li>
+                                <li><img class="icon" src="icons/icons8-linkedin.png" alt="linkedin" /></li>
+                                <li><img class="icon" src="icons/icons8-github.png" alt="github" /></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="grid-container" id="abouts">
+        <!-- About -->
+        <div  id="abouts">
             <div class="grid-item">
                 <img class="me1" src="image/image2.png" alt="imageko">
                 <br>
@@ -65,7 +70,7 @@
                 <br>
                 <br>
                 <h2>ABOUT ME</h2>
-                <div class="grid-info">
+                <div class="grid-info" id="details">
                     <h4> I'm Armie Jane, a recent graduate from STI College Caloocan with a degree in BSIT. 
                         As a UI/UX designer and front-end developer, I specialize in creating visually 
                         appealing interfaces and seamless user experiences. Let's build something amazing together! </h4>
@@ -86,10 +91,64 @@
                             <td class="line">43 Manapat St. Tanong Malabon City</td>
                         </tr>
                     </table>
+                    <br>
+                    <br>
+
                 </div>
                 </div>
             </div>
         </div>
+        <!-- Education -->
+        <div >
+            <div id="education">
+                <h2 class="title"> Education </h2>
+                <div class="grid-containers">
+                    <div class="grid-items">
+                        <h1 class="card-title">Tertiary</h1>
+                        <p>2020-PRESENT</p>
+                        <p>STI COLLEGE CALOOCAN</p>
+                    </div>
+                    <div class="grid-items">
+                        <p class="circle"></p>
+                    </div>
+                    <div class="grid-items"></div>  
+                    <div class="grid-items"></div>
+                    <div class="grid-items">
+                        <p class="circle"></p>
+                    </div>
+                    <div class="grid-items">
+                        <h1 class="card-title">Vocational/Technical</h1>
+                        <p>2019-2020</p>
+                        <p>STA. ELENA INSTITUTE OF SCIENCE AND TECHNOLOGY INC.</p>
+                    </div>  
+                    <div class="grid-items">
+                        <h1 class="card-title">High School</h1>
+                        <p class="card-detail">2013-2019</p>
+                        <p class="card-detail">RIZAL NATIONAL HIGH SCHOOL</p>
+                    </div>
+                    <div class="grid-items">
+                        <p class="circle"></p>
+                    </div>
+                    <div class="grid-items"></div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificate -->
+        <div class="grid-container">
+            <div  class="education">
+                <br>
+                <h2 class="title"> Certificate </h2>
+                <br>
+            </div>
+            <div class="grid-info">
+                    
+            </div>
+        </div>
+
+
+
+
         <div id="whatido">
             <h2>MY SPECIALTISE</h2>
             <div class="grid-container" id="whatidos">
@@ -150,5 +209,7 @@
                 </div>
             </div>
         </div>
+
+
     </body>
 </html>

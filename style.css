@@ -7,13 +7,11 @@
 }
 
 /* RIBBON */
-.theHead {
-  background-color: black;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px; /* Change margin to padding */
+  padding-right: 20px; /* Change margin to padding */
 }
 
 h3 {
@@ -24,14 +22,17 @@ h3 {
 
 #navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  justify-content: space-around;
+  width: calc(100% - 40px); /* Adjusted width to accommodate margins */
   background-color: #000;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 0px;
   z-index: 1000;
 }
 
-#navbar h3 {
+#navbar .logo {
   color: #fd0363;
   font-size: 35px;
   font-family: "Kaushan Script", cursive;
@@ -48,9 +49,9 @@ h3 {
   margin-left: 50px;
 }
 
-/* #navbar ul li:first-child {
+#navbar ul li:first-child {
   margin-left: 0;
-} */
+}
 
 #navbar ul li a {
   text-decoration: none;
@@ -59,111 +60,154 @@ h3 {
   font-weight: bold;
 }
 
-.main_info h2 {
-  font-family: "Holtwood One SC", serif;
+/* Added styles for button */
+#navbar ul li a:active {
+  background-color: black;
 }
 
-/* BODY */
-#homes {
-  display: grid;
-  grid-template-columns: 35% 30% 35%;
-  margin-top: 50px;
-  margin-right: 10%;
-  margin-left: 5%;
+#this {
+  background-color: #000;
+}
+
+/* home */
+body {
+  margin: 0;
+  padding: 0;
+  color: white; /* Set text color to white for better visibility */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  height: 82vh;
 }
 
 .grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+  flex: 1;
+  margin: 40px;
+  margin-right: 60px;
 }
 
-div img {
-  height: auto;
-  width: 400px;
+.main_info,
+.another_info {
+  flex: 1;
+}
+
+.ako {
+  flex: 0;
+  margin-left: 20px; /* Adjust margin as needed */
 }
 
 .main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content at the bottom */
+  align-items: flex-end; /* Align items to the right */
+  padding-right: 0px; /* Add padding to the right for better spacing */
   margin-top: 100px;
 }
 
 .main_info h2 {
+  margin: 0;
   color: #fd0363;
   font-size: 45px;
   text-align: right;
-  margin-bottom: 1px;
 }
 
 .main_info h4 {
-  color: #ffffff;
+  margin: 0;
+  color: #f8f7f7;
   font-size: 30px;
   text-align: right;
+  margin-top: 5px;
+}
+.another_info {
+  display: flex;
+  justify-content: flex;
+  margin-left: 20px;
 }
 
 .another_info h5 {
-  text-align: left;
   font-size: 20px;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-right: 85px;
   color: #ffffff;
-  line-height: 1.5; /* Adjust line height as needed */
-}
-
-.icons8 ul li {
-  display: flex;
-  list-style: none;
-}
-
-.icons8 {
-  display: flex;
-  justify-content: center; /* Centers the icons horizontally */
+  line-height: 1.5;
+  text-align: left;
 }
 
 .icons8 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
+.icons8 ul :first-child {
+  margin-left: 30px;
+}
+
 .icons8 ul li {
-  margin-right: 1px; /* Adjust spacing between icons */
+  margin-right: 5px;
 }
 
 .icons8 ul li img {
-  width: 50px;
+  width: 45px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-right: 0px;
 }
 
 /* About me */
 #abouts {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 200px;
-  margin-left: 90px;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  height: 82vh;
+  margin-left: 30px;
 }
 
-.grid-item {
-  border: none; }
+.grid-items {
+  display: flex;
+  align-items: center;
+  border: none;
+  flex: 1;
+  margin: 10px;
+  margin-top: 5px;
+  margin-left: 100px;
+}
 
 .me1 {
   height: auto;
-  width: 500px;
+  width: 450px;
+  flex: 0;
+  margin-left: 0px;
 }
 
-.grid-info {
+.grid-infos {
+  flex: 1;
+  text-align: justify;
+  margin-right: 200px;
+}
+
+div #details {
   border: 2px solid pink;
   padding: 50px;
+  width: 600px;
 }
-.grid-info {
+
+.grid-infos h4 {
+  color: black;
+  font-size: 15px;
+  margin-bottom: 1px;
   text-align: justify;
+  font-weight: bold;
 }
 
 .grid-infos h2 {
   color: #fd0363;
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: 1px;
   text-align: center;
   font-weight: bold;
@@ -177,7 +221,6 @@ div img {
   text-align: center;
   color: #000;
   font-size: 20px;
-
 }
 
 table {
@@ -190,7 +233,12 @@ th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+}
 
+table td {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 th {
@@ -201,13 +249,80 @@ th {
   text-align: right;
 }
 
+/* education */
+#education {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  font-family: "Droid Sans", sans-serif;
+}
+
+.title {
+  color: #fd0363;
+  font-size: 40px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+.grid-containers {
+  margin: 0%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 37% 10% 45%;
+}
+
+.grid-items {
+  display: block;
+  justify-content: center;
+  position: relative;
+  padding-left: 10px;
+  height: 50px;
+  color: #000;
+}
+
+.grid-items:nth-child(odd) {
+  text-align: right;
+}
+
+.grid-items:nth-child(even) {
+  text-align: left;
+}
+
+h1 .card-title {
+  font-size: 20px;
+  color: #000;
+}
+
+.circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fd0363;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #000;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.grid-items {
+  position: relative;
+}
+
 /* specialtize */
-#whatido{
+#whatido {
   /* justify-content: center; */
   align-items: center;
   margin-right: 100px;
   margin-left: 100px;
 }
+
 #whatidos {
   display: flex;
   justify-content: space-between;
@@ -230,17 +345,18 @@ th {
   text-align: center;
   color: #000;
   font-size: 20px;
-  flex: 1; /* Each detail takes equal space */
-  max-width: 400px; 
+  flex: 1;
+  /* Each detail takes equal space */
+  max-width: 400px;
   max-height: 400px;
 }
 
-div .ui{
+div .ui {
   height: 250px;
   width: 250px;
 }
-div .fd{
+
+div .fd {
   height: auto;
   width: 350px;
 }
-

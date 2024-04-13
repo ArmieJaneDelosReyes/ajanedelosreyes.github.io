@@ -10,8 +10,10 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding-left: 20px; /* Change margin to padding */
-  padding-right: 20px; /* Change margin to padding */
+  padding-left: 20px;
+  /* Change margin to padding */
+  padding-right: 20px;
+  /* Change margin to padding */
 }
 
 h3 {
@@ -23,7 +25,8 @@ h3 {
 #navbar {
   position: fixed;
   justify-content: space-around;
-  width: calc(100% - 40px); /* Adjusted width to accommodate margins */
+  width: calc(100% - 40px);
+  /* Adjusted width to accommodate margins */
   background-color: #000;
   height: 50px;
   padding-top: 10px;
@@ -73,7 +76,8 @@ h3 {
 body {
   margin: 0;
   padding: 0;
-  color: white; /* Set text color to white for better visibility */
+  color: white;
+  /* Set text color to white for better visibility */
 }
 
 .grid-container {
@@ -96,15 +100,19 @@ body {
 
 .ako {
   flex: 0;
-  margin-left: 20px; /* Adjust margin as needed */
+  margin-left: 20px;
+  /* Adjust margin as needed */
 }
 
 .main_info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Align content at the bottom */
-  align-items: flex-end; /* Align items to the right */
-  padding-right: 0px; /* Add padding to the right for better spacing */
+  justify-content: flex-end;
+  /* Align content at the bottom */
+  align-items: flex-end;
+  /* Align items to the right */
+  padding-right: 0px;
+  /* Add padding to the right for better spacing */
   margin-top: 100px;
 }
 
@@ -122,19 +130,21 @@ body {
   text-align: right;
   margin-top: 5px;
 }
+
 .another_info {
   display: flex;
   justify-content: flex;
   margin-left: 20px;
 }
 
-h4 .auto-input{
+h4 .auto-input {
   color: #fd0363;
 }
-.btn--download{
+
+.btn--download {
   border: #fd0363;
   padding: 14px 30px;
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 17px;
   background-color: #fd0363;
@@ -142,9 +152,10 @@ h4 .auto-input{
   margin: 40px 0px 0px 0px;
 }
 
-.btn--download:hover{
+.btn--download:hover {
   background-color: #000000;
 }
+
 .another_info h5 {
   font-size: 20px;
   margin-top: 100px;
@@ -246,7 +257,8 @@ table {
   font-size: 15px;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -272,19 +284,22 @@ th {
   font-family: "Droid Sans", sans-serif;
   margin-bottom: 0px;
 }
-.grid-container-education{
+
+.grid-container-education {
   display: grid;
-  grid-template-columns:  20% 80%;
+  grid-template-columns: 20% 80%;
   padding: 10px;
   margin: 0px 30px 0px 150px;
 }
-.education-image{
+
+.education-image {
   width: 470px;
   height: auto;
   margin: 30px 0px 0px 0px;
   position: absolute;
   z-index: 10;
 }
+
 .title {
   color: #fd0363;
   font-size: 40px;
@@ -299,15 +314,17 @@ th {
 .timeline {
   position: relative;
   max-width: 1100px;
-  display:inline;
+  display: inline;
   justify-content: center;
 }
-.container{
-  padding:10px 59px;
+
+.container {
+  padding: 10px 59px;
   position: relative;
   width: 40%;
 }
-.text-box{
+
+.text-box {
   padding: 15px 15px;
   background-color: #ffffff;
   border: 2px solid #fd0363;
@@ -316,16 +333,20 @@ th {
   font-size: 15px;
   width: 250px;
 }
-.left-container{
+
+.left-container {
   left: 120px;
 }
-.text-left{
+
+.text-left {
   text-align: right;
 }
-.right-container{
+
+.right-container {
   left: 50%;
 }
-.container .circle{
+
+.container .circle {
   position: absolute;
   width: 30px;
   border-radius: 50%;
@@ -333,31 +354,36 @@ th {
   left: 388px;
   top: 32px;
   z-index: 10;
-} 
-.right-container .circle{
+}
+
+.right-container .circle {
   left: -20px;
 }
+
 .timeline:after {
-  content:" ";
+  content: " ";
   height: 100%;
-  width: 4px  ;
-  background:#000000;
-  position:absolute;
-  z-index:-1;
-  top:0;
+  width: 4px;
+  background: #000000;
+  position: absolute;
+  z-index: -1;
+  top: 0;
   margin-left: -3px;
-  left:50%;
+  left: 50%;
 }
-.card-title{
+
+.card-title {
   color: #000;
   font-weight: 600;
 }
-.info{
+
+.info {
   color: #000;
-  display: inline-block ;
+  display: inline-block;
   margin-bottom: 15px;
 }
-.left-container-arrow{
+
+.left-container-arrow {
   width: 0;
   height: 0;
   position: absolute;
@@ -368,7 +394,8 @@ th {
   border-left: 15px solid #fd0363;
   right: -15px;
 }
-.right-container-arrow{
+
+.right-container-arrow {
   width: 0;
   height: 0;
   position: absolute;
@@ -381,24 +408,24 @@ th {
 }
 
 /* certificate */
-.cert-title{
+.cert-title {
   text-align: center;
   color: #ffff;
   background-color: #fd0363;
   font-size: 35px;
   border: 4px solid black;
   width: 35%;
-  margin: 90px 0px 5px 131px ;
+  margin: 90px 0px 5px 131px;
   padding: 10px;
 }
 
-.grid-cert{
+.grid-cert {
   display: flex;
   justify-content: space-between;
   margin: 5px 5px 200px 5px;
 }
 
-.cert-img{
+.cert-img {
   width: 300px;
   height: auto;
 }
@@ -406,29 +433,42 @@ th {
 
 /* specialtize */
 #whatido {
-  align-items: center;
+  /* align-items: center;
   margin-right: 150px;
   margin-left: 150px;
-  color: #fd0363;
+  color: black;
   font-size: 25px;
   margin-bottom: 120px;
   text-align: center;
   font-weight: bold;
+  background: #fd0363; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.mh-skills .mh-professional-skills{
-  padding-right: 60px;
-  color: black;
+.container {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
 }
 
-.mh-skills .mh-professional-skills h2{
-  font-size: 30px;
-  line-height: 40px;
+.heading {
   text-align: center;
-  
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text
 }
 
-.grid-container-ido {
+.title-whatido {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+
+/* .grid-container-ido {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -487,7 +527,7 @@ div .fd {
   color: #fd0363;
   padding: 5px 15px;
   border-radius: 6px;
-}
+} */
 
 
 /* projects */
@@ -501,6 +541,7 @@ div .fd {
   text-align: center;
   font-weight: bold;
 }
+
 .grid-container-ido {
   display: flex;
   justify-content: space-between;
@@ -531,7 +572,7 @@ div .fdev {
 }
 
 .buttons {
-  background-color: #fd0363; 
+  background-color: #fd0363;
   border: none;
   color: #000;
   padding: 10px 32px;
@@ -545,17 +586,17 @@ div .fdev {
 }
 
 .buttons:hover {
-  background-color: #fd0363; 
+  background-color: #fd0363;
   color: #ffffff;
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: space-evenly;
   margin: 15px 30px 0px 30px;
 }
 
-.skills-design{
+.skills-design {
   border: 2px solid #fd0363;
   color: #fd0363;
   padding: 5px 15px;

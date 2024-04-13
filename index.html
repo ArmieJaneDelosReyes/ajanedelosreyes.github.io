@@ -1,3 +1,6 @@
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +17,7 @@
     <div id="this">
         <div class="theHead">
             <nav id="navbar">
-                <h3 class="logo">Portfolio</h3>
+                <h3 class="logo">A<span>Jane</span></h3>
                 <ul>
                     <li><a href="#homes">Home</a></li>
                     <li><a href="#abouts">About</a></li>
@@ -31,8 +34,8 @@
                     <h2>ARMIE JANE D.</h2>
                     <h2>DELOS REYES</h2>
                     <br>
-                    <h4>I'm Frontend Developer</h4>
-                    <h4>and UI/UX Designer</h4>
+                    <h4>I'm <span class="auto-input"></span></h4>
+                    <a href="cv.pdf" download class="btn btn--download">Download CV</a>
                 </div>
             </div>
             <div>
@@ -158,7 +161,87 @@
 
     <!-- WHAT I DO -->
     <div id="whatido">
-        <h2>MY SPECIALTISE</h2>
+        <div class="container">
+            <div class="rows">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-skills-inner">
+                        <div class="mh-prossional-skills">
+                            <h2>Technical Skills</h2>
+                            <div class="each-skills">
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name"><p>JavaScript</p></div>
+                                            <div class="percentage-num"><p>20%</p></div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentages" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name"><p>HTML</p></div>
+                                            <div class="percentage-num"><p>20%</p></div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentages" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name"><p>CSS</p></div>
+                                            <div class="percentage-num"><p>20%</p></div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentages" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="candidates">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="name"><p>PHP</p></div>
+                                            <div class="percentage-num"><p>20%</p></div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentages" style="width: 86%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-professional-skills">
+                            <h2>Other Skills</h2> 
+                            <ul class="mh-professional-prograss">
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skills-name"><P>Communication</P></div>
+                                </li>
+
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skills-name"><P>Communication2</P></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <h2>MY SPECIALTISE</h2>
         <div class="grid-container-ido">
             <div class="details">
                 <img class="ui" src="image/IMAGE3.png" alt="imageko">
@@ -188,7 +271,7 @@
                 </div>
                 <button class="buttons"> View Projects</button>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- projects -->
@@ -225,19 +308,16 @@
     </div>
 
 
-
+    
     <script>
-        function bounce() {
-            var marquee = document.getElementById("myMarquee");
-            marquee.setAttribute("behavior", "alternate");
-        }
-
-        function stopBounce() {
-            var marquee = document.getElementById("myMarquee");
-            marquee.setAttribute("behavior", "scroll");
-        }
-
+        let typed = new Typed(".auto-input", {
+        strings: ["Front-end Developer", "UI/UX Designner", "Digital Marketing"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+        })
     </script>
+    
 </body>
 
 </html>
